@@ -103,7 +103,7 @@ connect_all() ->
 %%------------------------------------------------------------------------------
 init_node(Node) ->
   remote_load_modules(Node,   [edts_code, edts_dbg, redbug]),
-  remote_start_services(Node, [edts_code]).
+  remote_start_services(Node, [edts_code, edts_dbg]).
 
 %%------------------------------------------------------------------------------
 %% @doc
